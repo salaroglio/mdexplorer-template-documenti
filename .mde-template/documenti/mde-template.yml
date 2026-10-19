@@ -20,6 +20,13 @@ theory:
   it: { from: .mde-template/documenti/teoria, to: teoria/documenti }
 seeds:
   - { from: .mde-template/documenti/semi/fonti.md, to: fonti/README.md }
-  - { from: .mde-template/documenti/semi/indice.md, to: wiki/indice.md }
-  - { from: .mde-template/documenti/semi/registro.md, to: wiki/registro.md }
+  - { from: .mde-template/documenti/esempio/wiki/indice.md, to: wiki/indice.md }
+  - { from: .mde-template/documenti/esempio/wiki/registro.md, to: wiki/registro.md }
   - { from: .mde-template/documenti/semi/revisioni.md, to: revisioni/README.md }
+  - { from: .mde-template/documenti/esempio/fonti/verbale-2027-03-12.md, to: fonti/verbale-2027-03-12.md }
+  - { from: .mde-template/documenti/esempio/fonti/mail-2027-03-20-scadenza.md, to: fonti/mail-2027-03-20-scadenza.md }
+  - { from: .mde-template/documenti/esempio/wiki/nordica-crediti.md, to: wiki/nordica-crediti.md }
+  - { from: .mde-template/documenti/esempio/wiki/portale-recupero-crediti.md, to: wiki/portale-recupero-crediti.md }
+  - { from: .mde-template/documenti/esempio/wiki/fonte-verbale-2027-03-12.md, to: wiki/fonte-verbale-2027-03-12.md }
+  - { from: .mde-template/documenti/esempio/wiki/fonte-mail-2027-03-20-scadenza.md, to: wiki/fonte-mail-2027-03-20-scadenza.md }
+  - { from: .mde-template/documenti/esempio/revisioni/revisione-2027-03-21.md, to: revisioni/revisione-2027-03-21.md }
