@@ -1,34 +1,34 @@
 ---
-title: Scrittura sistematica dei documenti
+title: Systematic writing of documents
 ---
 
-# Scrittura sistematica dei documenti
+# Systematic writing of documents
 
 ## TL;DR
 
-Lo strato comune di ogni progetto composto in MdExplorer: un wiki del progetto scritto e tenuto in ordine con gli agenti,
-come suggerisce l'idea degli LLM wiki. Le fonti restano intatte, le pagine crescono a ogni fonte nuova, l'indice e il
-registro dicono che cosa c'è e che cosa è cambiato.
+The common layer of every composed project in MdExplorer: a project wiki written and kept in order with the agents, as
+the idea of LLM wikis suggests. The sources stay untouched, the pages grow with every new source, the index and the log
+say what is there and what changed.
 
-- Si prende sempre, alla creazione di un progetto composto; i metodi (Ontologie, ISO 9001) si aggiungono sopra.
-- Tre agenti preparano (redattore, revisore, bibliotecario); il responsabile della documentazione approva e decide.
-- La teoria, se la chiedi, arriva in `teoria/documenti/`: si legge da soli o con il MarkAgent.
+- It is always taken when a composed project is created; the methods (Ontologies, ISO 9001) are added on top.
+- Three agents prepare (editor, reviewer, librarian); the documentation owner approves and decides.
+- The theory, if you ask for it, lands in `theory/documenti/`: to read alone or with the MarkAgent.
 
-## Che cosa porta
+## What it brings
 
-| Che cosa | Dove |
+| What | Where |
 |---|---|
-| I due workflow: una fonte nel wiki, il controllo del wiki | `workflows/` |
-| Le schede dei tre agenti | `agents/` |
-| Il ruolo: Responsabile della documentazione | il documento delle responsabilità del progetto, come ruolo aperto |
-| Le istruzioni per gli agenti del progetto | un blocco in `CLAUDE.md`, `AGENTS.md`, `copilot-instructions.md` |
-| I file iniziali del gruppo | `fonti/`, `wiki/indice.md`, `wiki/registro.md`, `revisioni/` |
-| La skill delle convenzioni del wiki | `.claude/skills/documenti-wiki/` |
-| La teoria degli LLM wiki | `teoria/`, copiata in `teoria/documenti/` se la chiedi |
+| The two workflows: a source into the wiki, the wiki check | `workflows/` |
+| The cards of the three agents | `agents/` |
+| The role: Documentation owner | the project's responsibilities document, as an open role |
+| The instructions for the project's agents | a block in `CLAUDE.md`, `AGENTS.md`, `copilot-instructions.md` |
+| The group's starting files | `sources/`, `wiki/index.md`, `wiki/log.md`, `reviews/` |
+| The skill of the wiki conventions | `.claude/skills/documenti-wiki/` |
+| The theory of LLM wikis | `theory/`, copied into `theory/documenti/` if you ask for it |
 
-## Come si comincia
+## How to start
 
-1. Chi risponde della documentazione prende il ruolo nel documento delle responsabilità (o dice «È mio» nella città degli agenti).
-2. Metti in `fonti/` un documento da cui partire: un verbale, una specifica, una mail esportata.
-3. Lancia il redattore («Una fonte nel wiki»): legge la fonte, scrive o aggiorna le pagine, l'indice e il registro.
-4. Ogni tanto lancia il bibliotecario («Il controllo del wiki»): trova contraddizioni, pagine orfane, collegamenti rotti.
+1. Whoever answers for the documentation takes the role in the responsibilities document (or says «It's mine» in the agent city).
+2. Put a document to start from in `sources/`: minutes, a specification, an exported email.
+3. Launch the editor («A source into the wiki»): it reads the source, writes or updates the pages, the index and the log.
+4. Every now and then launch the librarian («The wiki check»): it finds contradictions, orphan pages, broken links.

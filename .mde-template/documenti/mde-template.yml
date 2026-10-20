@@ -1,8 +1,8 @@
 mde_template: 1
 id: documenti
 kind: foundation
-title: Scrittura sistematica dei documenti
-description: "Il wiki del progetto, scritto e tenuto in ordine con gli agenti: le fonti restano intatte, le pagine crescono, l'indice e il registro dicono che cosa c'è e che cosa è cambiato."
+title: Systematic writing of documents
+description: "The project's wiki, written and kept in order with the agents: the sources stay untouched, the pages grow, the index and the log say what is there and what changed."
 version: 1.1.0
 requires:
   mde: 2026.10.19.14
@@ -10,25 +10,24 @@ languages:
   it: { structure: main, example: esempio }
   en: { structure: en, example: example }
 roles:
-  - { role: Responsabile della documentazione, description: "approva le pagine del wiki e i controlli, e decide che cosa si corregge", agents: [documenti-redattore, documenti-revisore, documenti-bibliotecario] }
+  - { role: Documentation owner, description: "approves the wiki pages and the checks, and decides what gets fixed", agents: [documenti-editor, documenti-reviewer, documenti-librarian] }
 workflows:
-  - .mde-template/documenti/workflows/fonte.md
-  - .mde-template/documenti/workflows/controllo.md
-instructions: .mde-template/documenti/istruzioni.md
+  - .mde-template/documenti/workflows/source.md
+  - .mde-template/documenti/workflows/check.md
+instructions: .mde-template/documenti/instructions.md
 slides:
-  it: .mde-template/documenti/presentazione.md
   en: .mde-template/documenti/presentation.md
 theory:
-  it: { from: .mde-template/documenti/teoria, to: teoria/documenti }
+  en: { from: .mde-template/documenti/theory, to: theory/documenti }
 seeds:
-  - { from: .mde-template/documenti/semi/fonti.md, to: fonti/README.md }
-  - { from: .mde-template/documenti/esempio/wiki/indice.md, to: wiki/indice.md }
-  - { from: .mde-template/documenti/esempio/wiki/registro.md, to: wiki/registro.md }
-  - { from: .mde-template/documenti/semi/revisioni.md, to: revisioni/README.md }
-  - { from: .mde-template/documenti/esempio/fonti/verbale-2027-03-12.md, to: fonti/verbale-2027-03-12.md }
-  - { from: .mde-template/documenti/esempio/fonti/mail-2027-03-20-scadenza.md, to: fonti/mail-2027-03-20-scadenza.md }
-  - { from: .mde-template/documenti/esempio/wiki/nordica-crediti.md, to: wiki/nordica-crediti.md }
-  - { from: .mde-template/documenti/esempio/wiki/portale-recupero-crediti.md, to: wiki/portale-recupero-crediti.md }
-  - { from: .mde-template/documenti/esempio/wiki/fonte-verbale-2027-03-12.md, to: wiki/fonte-verbale-2027-03-12.md }
-  - { from: .mde-template/documenti/esempio/wiki/fonte-mail-2027-03-20-scadenza.md, to: wiki/fonte-mail-2027-03-20-scadenza.md }
-  - { from: .mde-template/documenti/esempio/revisioni/revisione-2027-03-21.md, to: revisioni/revisione-2027-03-21.md }
+  - { from: .mde-template/documenti/seeds/sources.md, to: sources/README.md }
+  - { from: .mde-template/documenti/example/wiki/index.md, to: wiki/index.md }
+  - { from: .mde-template/documenti/example/wiki/log.md, to: wiki/log.md }
+  - { from: .mde-template/documenti/seeds/reviews.md, to: reviews/README.md }
+  - { from: .mde-template/documenti/example/sources/minutes-2027-03-12.md, to: sources/minutes-2027-03-12.md }
+  - { from: .mde-template/documenti/example/sources/email-2027-03-20-go-live.md, to: sources/email-2027-03-20-go-live.md }
+  - { from: .mde-template/documenti/example/wiki/nordica-crediti.md, to: wiki/nordica-crediti.md }
+  - { from: .mde-template/documenti/example/wiki/debt-collection-portal.md, to: wiki/debt-collection-portal.md }
+  - { from: .mde-template/documenti/example/wiki/source-minutes-2027-03-12.md, to: wiki/source-minutes-2027-03-12.md }
+  - { from: .mde-template/documenti/example/wiki/source-email-2027-03-20-go-live.md, to: wiki/source-email-2027-03-20-go-live.md }
+  - { from: .mde-template/documenti/example/reviews/review-2027-03-21.md, to: reviews/review-2027-03-21.md }

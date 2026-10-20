@@ -1,0 +1,44 @@
+{
+  "mde_workflow": 3,
+  "title": "A source into the wiki",
+  "description": "The new sources brought into the wiki by the editor, read again by the reviewer, accepted by the documentation owner.",
+  "steps": [
+    {
+      "id": "source",
+      "agent": "documenti-editor",
+      "skill": "bring-in-source",
+      "title": "Bring the sources into the wiki",
+      "trigger": { "launch": true },
+      "start": "manual"
+    },
+    {
+      "id": "review",
+      "agent": "documenti-reviewer",
+      "skill": "review",
+      "title": "Review",
+      "trigger": { "after": ["source"] },
+      "start": "auto",
+      "inputs": {
+        "pages": { "from": "source.pages" },
+        "log": { "from": "source.log" }
+      }
+    },
+    {
+      "id": "decision",
+      "person": "Documentation owner",
+      "title": "Accept the pages",
+      "trigger": { "after": ["review"] },
+      "task": "Read the review of the new pages and decide whether they enter the wiki as they are.",
+      "inputs": {
+        "review": { "from": "review.review" }
+      },
+      "outcomes": [
+        { "id": "accepted", "label": "Accepted" },
+        { "id": "to-fix", "label": "To fix" }
+      ]
+    }
+  ],
+  "loops": [
+    { "id": "fix", "steps": ["source", "review"], "until": "approved", "restart": "manual" }
+  ]
+}
