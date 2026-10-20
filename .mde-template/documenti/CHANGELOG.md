@@ -1,7 +1,7 @@
 # CHANGELOG
 
 ## 1.1.0 — 2026-10-20
-- Lo strato comune parla anche inglese: i rami `en` (struttura) ed `example` (esempio), con agenti, workflow, skill, file iniziali e teoria in inglese, e le slide inglesi per la vetrina di «Crea nuovo progetto».
+- The common layer speaks English too: the `en` (structure) and `example` branches, with agents, workflows, skill, starting files and theory in English, and the English slides for the «Create new project» showcase.
 
 ## 1.0.0 — 2026-10-19
-- Prima versione dello strato comune: il wiki del progetto (fonti intatte, pagine, indice, registro), tre agenti (redattore, revisore, bibliotecario), due workflow (una fonte nel wiki, il controllo del wiki), la skill `documenti-wiki` e la teoria degli LLM wiki. Serve MdExplorer 2026.10.19.14 o più nuovo.
+- First version of the common layer (Italian): the project's wiki (untouched sources, pages, index, log), three agents (editor, reviewer, librarian), two workflows (a source into the wiki, the wiki check), the `documenti-wiki` skill and the theory of LLM wikis. Needs MdExplorer 2026.10.19.14 or newer.

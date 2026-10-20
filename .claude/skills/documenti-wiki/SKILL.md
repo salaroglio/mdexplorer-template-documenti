@@ -1,51 +1,53 @@
 ---
 name: documenti-wiki
-description: "Le convenzioni del wiki del progetto (strato comune di MdExplorer): com'è fatta una pagina, l'indice wiki/indice.md e il registro wiki/registro.md, e che cosa controllano revisore e bibliotecario. Usala quando scrivi, aggiorni, rivedi o controlli una pagina di wiki/, o quando porti una fonte di fonti/ nel wiki."
+description: "The conventions of the project's wiki (MdExplorer's common layer): how a page is made, the index wiki/index.md and the log wiki/log.md, and what the reviewer and the librarian check. Use it when you write, update, review or check a page in wiki/, or when you bring a source from sources/ into the wiki."
 ---
 
-# Il wiki del progetto
+# The project's wiki
 
-Tre strati, come negli LLM wiki: **le fonti** (`fonti/`, intatte: verbali, specifiche, mail esportate), **il wiki**
-(`wiki/`, le pagine scritte e tenute in ordine), **le convenzioni** (questa skill e le istruzioni del progetto). Il wiki
-cresce: ogni fonte nuova arricchisce pagine che ci sono già, invece di restare un documento in più da rileggere.
+Three layers, as in LLM wikis: **the sources** (`sources/`, untouched: minutes, specifications, exported emails),
+**the wiki** (`wiki/`, the pages written and kept in order), **the conventions** (this skill and the project's
+instructions). The wiki grows: every new source enriches pages that are already there, instead of staying one more
+document to read again.
 
-## Una pagina
+## A page
 
-- Il nome del file dice l'argomento, in minuscolo con i trattini: `wiki/nordica-crediti.md`, `wiki/riesame-dei-requisiti.md`.
-- Front matter con `title:`; poi `## TL;DR` (al massimo tre righe e tre punti, scritto per ultimo): chi legge solo quello
-  deve uscirne con l'essenziale.
-- **Un argomento per pagina**: un concetto, una persona o un'organizzazione, un processo, la sintesi di una fonte
-  (`wiki/fonte-<nome-della-fonte>.md`).
-- Ogni affermazione dice da dove viene: `(fonte: [verbale del 12/03](../fonti/verbale-2027-03-12.md), § Decisioni)`.
-- Si collega alle pagine vicine invece di ripeterle: `[il riesame](riesame-dei-requisiti.md)`.
-- In fondo `## Storia`: una riga per ogni cambiamento che conta, con la data e la fonte che l'ha portato.
+- The file name says the topic, lowercase with dashes: `wiki/nordica-crediti.md`, `wiki/requirements-review.md`.
+- Front matter with `title:`; then `## TL;DR` (at most three lines and three points, written last): whoever reads only
+  that must come away with the essentials.
+- **One topic per page**: a concept, a person or an organisation, a process, the summary of a source
+  (`wiki/source-<name-of-the-source>.md`).
+- Every statement says where it comes from: `(source: [minutes of 12/03](../sources/minutes-2027-03-12.md), § Decisions)`.
+- It links to the nearby pages instead of repeating them: `[the review](requirements-review.md)`.
+- At the bottom `## History`: one line for every change that matters, with the date and the source that brought it.
 
-## L'indice `wiki/indice.md`
+## The index `wiki/index.md`
 
-Una tabella per tipo di pagina (concetti, persone e organizzazioni, processi, fonti): **pagina** (il collegamento),
-**una riga che dice che cosa c'è**. Ogni pagina del wiki è nell'indice, e ogni voce dell'indice ha la sua pagina. Chi
-cerca qualcosa parte da qui.
+One table per kind of page (concepts, people and organisations, processes, sources): **page** (the link), **one line
+that says what is in it**. Every page of the wiki is in the index, and every index entry has its page. Whoever looks for
+something starts here.
 
-## Il registro `wiki/registro.md`
+## The log `wiki/log.md`
 
-Si aggiunge in fondo, non si riscrive. Una voce per operazione:
+Entries are added at the bottom, never rewritten. One entry per operation:
 
 ```
-## [2027-03-14] fonte | verbale-2027-03-12.md
-- Nuova: wiki/fonte-verbale-2027-03-12.md
-- Aggiornate: wiki/nordica-crediti.md, wiki/riesame-dei-requisiti.md
+## [2027-03-14] source | minutes-2027-03-12.md
+- New: wiki/source-minutes-2027-03-12.md
+- Updated: wiki/nordica-crediti.md, wiki/requirements-review.md
 ```
 
-Le azioni sono `fonte` (una fonte portata nel wiki), `pagina` (una pagina scritta o corretta a mano), `controllo` (un
-controllo del bibliotecario). Una fonte di `fonti/` che il registro non nomina è una fonte **nuova**.
+The actions are `source` (a source brought into the wiki), `page` (a page written or fixed by hand), `check` (a check
+by the librarian). A source in `sources/` that the log does not name is a **new** source.
 
-## Che cosa controlla il revisore
+## What the reviewer checks
 
-Le pagine appena scritte o aggiornate, una per una: la fonte di ogni affermazione c'è e dice davvero così; il TL;DR basta
-da solo; la pagina è nell'indice e si collega alle vicine; non contraddice un'altra pagina; il nome dice l'argomento.
+The pages just written or updated, one by one: the source of every statement is there and really says so; the TL;DR is
+enough on its own; the page is in the index and links to the nearby ones; it does not contradict another page; the name
+says the topic.
 
-## Che cosa controlla il bibliotecario
+## What the librarian checks
 
-Il wiki intero: pagine che si contraddicono; affermazioni superate da una fonte più nuova; pagine orfane (nessuna pagina
-le collega); concetti nominati in più pagine senza una pagina loro; collegamenti rotti; indice e pagine che non
-corrispondono; voci del registro senza la pagina che nominano.
+The whole wiki: pages that contradict each other; statements superseded by a newer source; orphan pages (no page links
+to them); concepts named in several pages without a page of their own; broken links; index and pages that do not match;
+log entries without the page they name.

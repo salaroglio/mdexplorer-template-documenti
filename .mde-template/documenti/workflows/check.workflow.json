@@ -1,0 +1,29 @@
+{
+  "mde_workflow": 3,
+  "title": "The wiki check",
+  "description": "The librarian checks the whole wiki; the documentation owner decides what gets fixed.",
+  "steps": [
+    {
+      "id": "check",
+      "agent": "documenti-librarian",
+      "skill": "check",
+      "title": "Check the wiki",
+      "trigger": { "launch": true },
+      "start": "manual"
+    },
+    {
+      "id": "decision",
+      "person": "Documentation owner",
+      "title": "Decide the fixes",
+      "trigger": { "after": ["check"] },
+      "task": "Read the check report and decide what gets fixed: the editor fixes it with a source, or you by hand with a «page» entry in the log.",
+      "inputs": {
+        "check": { "from": "check.check" }
+      },
+      "outcomes": [
+        { "id": "to-fix", "label": "To fix" },
+        { "id": "in-order", "label": "The wiki is in order" }
+      ]
+    }
+  ]
+}
