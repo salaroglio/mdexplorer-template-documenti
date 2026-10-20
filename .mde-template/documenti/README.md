@@ -1,8 +1,8 @@
 ---
-title: Systematic writing of documents
+title: Document Driven Development
 ---
 
-# Systematic writing of documents
+# Document Driven Development
 
 ## TL;DR
 

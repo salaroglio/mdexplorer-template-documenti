@@ -1,4 +1,4 @@
-## Systematic writing of documents
+## Document Driven Development
 
 - The project's wiki is in `wiki/`: always start from `wiki/index.md`, which says what is there, and look in
   `wiki/log.md` for what changed recently. The sources are in `sources/` and are never modified.
