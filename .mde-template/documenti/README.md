@@ -1,8 +1,8 @@
 ---
-title: Scrittura sistematica dei documenti
+title: Document Driven Development
 ---
 
-# Scrittura sistematica dei documenti
+# Document Driven Development
 
 ## TL;DR
 

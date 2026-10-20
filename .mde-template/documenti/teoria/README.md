@@ -1,8 +1,8 @@
 ---
-title: La teoria della scrittura sistematica dei documenti
+title: La teoria del Document Driven Development
 ---
 
-# La teoria della scrittura sistematica dei documenti
+# La teoria del Document Driven Development
 
 ## TL;DR
 
@@ -15,7 +15,7 @@ spiegare dal MarkAgent.
 
 ## Che cos'è
 
-È la teoria del metodo «Scrittura sistematica dei documenti», lo strato comune che c'è in ogni progetto composto di
+È la teoria del metodo «Document Driven Development», lo strato comune che c'è in ogni progetto composto di
 MdExplorer. Non è un manuale del programma: è il *perché* e il *come* di un modo di lavorare.
 
 L'hai nel progetto perché l'hai chiesta quando hai creato il progetto, oppure dopo, da Impostazioni del progetto →

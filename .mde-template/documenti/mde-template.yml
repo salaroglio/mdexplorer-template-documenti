@@ -1,9 +1,9 @@
 mde_template: 1
 id: documenti
 kind: foundation
-title: Scrittura sistematica dei documenti
+title: Document Driven Development
 description: "Il wiki del progetto, scritto e tenuto in ordine con gli agenti: le fonti restano intatte, le pagine crescono, l'indice e il registro dicono che cosa c'è e che cosa è cambiato."
-version: 1.1.0
+version: 1.2.0
 requires:
   mde: 2026.10.19.14
 languages:
