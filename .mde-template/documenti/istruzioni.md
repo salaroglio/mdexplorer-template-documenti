@@ -1,4 +1,4 @@
-## Scrittura sistematica dei documenti
+## Document Driven Development
 
 - Il wiki del progetto sta in `wiki/`: parti sempre da `wiki/indice.md`, che dice che cosa c'è, e guarda in
   `wiki/registro.md` che cosa è cambiato di recente. Le fonti stanno in `fonti/` e non si modificano mai.

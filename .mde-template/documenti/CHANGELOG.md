@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 1.2.0 — 2026-10-20
+- Il metodo si chiama «Document Driven Development», in italiano e in inglese (era «Scrittura sistematica dei documenti»).
+
 ## 1.1.0 — 2026-10-20
 - Lo strato comune parla anche inglese: i rami `en` (struttura) ed `example` (esempio), con agenti, workflow, skill, file iniziali e teoria in inglese, e le slide inglesi per la vetrina di «Crea nuovo progetto».
 

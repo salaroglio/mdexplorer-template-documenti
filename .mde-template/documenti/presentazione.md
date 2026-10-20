@@ -7,7 +7,7 @@ reveal:
 <!-- .slide: data-background-image="/mde-space/sfondi/luna.svg" class="mde-cielo" -->
 <img class="mde-icona-grande" src="/mde-space/icone/base.svg" alt="">
 
-# Scrittura sistematica dei documenti
+# Document Driven Development
 
 Lo **strato comune** di ogni progetto composto:
 il wiki del progetto, scritto e tenuto in ordine con gli agenti.
