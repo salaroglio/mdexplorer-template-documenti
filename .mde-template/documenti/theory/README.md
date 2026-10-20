@@ -1,8 +1,8 @@
 ---
-title: The theory of the systematic writing of documents
+title: The theory of Document Driven Development
 ---
 
-# The theory of the systematic writing of documents
+# The theory of Document Driven Development
 
 ## TL;DR
 
@@ -14,7 +14,7 @@ kept in order by people and agents together. Six short chapters, to read in orde
 
 ## What it is
 
-It is the theory of the method «Systematic writing of documents», the common layer that every composed MdExplorer
+It is the theory of the method «Document Driven Development», the common layer that every composed MdExplorer
 project has. It is not a manual of the program: it is the *why* and the *how* of a way of working.
 
 You have it in the project because you asked for it when you created the project, or later, from Project settings →

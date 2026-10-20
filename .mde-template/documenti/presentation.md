@@ -7,7 +7,7 @@ reveal:
 <!-- .slide: data-background-image="/mde-space/sfondi/luna.svg" class="mde-cielo" -->
 <img class="mde-icona-grande" src="/mde-space/icone/base.svg" alt="">
 
-# Systematic writing of documents
+# Document Driven Development
 
 The **common layer** of every composed project:
 the project's wiki, written and kept in order with the agents.

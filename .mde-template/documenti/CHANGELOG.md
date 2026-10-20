@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 1.2.0 — 2026-10-20
+- The method is called «Document Driven Development», in Italian and in English (it was «Systematic writing of documents»).
+
 ## 1.1.0 — 2026-10-20
 - The common layer speaks English too: the `en` (structure) and `example` branches, with agents, workflows, skill, starting files and theory in English, and the English slides for the «Create new project» showcase.
 
