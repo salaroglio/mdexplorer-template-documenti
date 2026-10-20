@@ -3,11 +3,12 @@ id: documenti
 kind: foundation
 title: Scrittura sistematica dei documenti
 description: "Il wiki del progetto, scritto e tenuto in ordine con gli agenti: le fonti restano intatte, le pagine crescono, l'indice e il registro dicono che cosa c'è e che cosa è cambiato."
-version: 1.0.0
+version: 1.1.0
 requires:
   mde: 2026.10.19.14
 languages:
   it: { structure: main, example: esempio }
+  en: { structure: en, example: example }
 roles:
   - { role: Responsabile della documentazione, description: "approva le pagine del wiki e i controlli, e decide che cosa si corregge", agents: [documenti-redattore, documenti-revisore, documenti-bibliotecario] }
 workflows:
@@ -16,6 +17,7 @@ workflows:
 instructions: .mde-template/documenti/istruzioni.md
 slides:
   it: .mde-template/documenti/presentazione.md
+  en: .mde-template/documenti/presentation.md
 theory:
   it: { from: .mde-template/documenti/teoria, to: teoria/documenti }
 seeds:
