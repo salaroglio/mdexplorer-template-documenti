@@ -1,19 +1,14 @@
-mde_template: 1
+mde_template: 2
 id: documenti
 kind: foundation
 title: Document Driven Development
 description: "The project's wiki, written and kept in order with the agents: the sources stay untouched, the pages grow, the index and the log say what is there and what changed."
-version: 1.2.0
+version: 2.0.0
 requires:
-  mde: 2026.10.19.14
+  mde: 2026.10.21.2
 languages:
   it: { structure: main, example: esempio }
   en: { structure: en, example: example }
-roles:
-  - { role: Documentation owner, description: "approves the wiki pages and the checks, and decides what gets fixed", agents: [documenti-editor, documenti-reviewer, documenti-librarian] }
-workflows:
-  - .mde-template/documenti/workflows/source.md
-  - .mde-template/documenti/workflows/check.md
 instructions: .mde-template/documenti/instructions.md
 slides:
   en: .mde-template/documenti/presentation.md
@@ -24,3 +19,11 @@ seeds:
   - { from: .mde-template/documenti/seeds/index.md, to: wiki/index.md }
   - { from: .mde-template/documenti/seeds/log.md, to: wiki/log.md }
   - { from: .mde-template/documenti/seeds/reviews.md, to: reviews/README.md }
+skills:
+  - .mde-template/documenti/skills/documenti-wiki
+agent_city:
+  roles:
+    - { role: Documentation owner, description: "approves the wiki pages and the checks, and decides what gets fixed", agents: [documenti-editor, documenti-reviewer, documenti-librarian] }
+  workflows:
+    - .mde-template/documenti/workflows/source.md
+    - .mde-template/documenti/workflows/check.md
