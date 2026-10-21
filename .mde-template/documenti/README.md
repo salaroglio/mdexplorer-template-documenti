@@ -26,6 +26,8 @@ registro dicono che cosa c'è e che cosa è cambiato.
 | La skill delle convenzioni del wiki | `.claude/skills/documenti-wiki/` |
 | La teoria degli LLM wiki | `teoria/`, copiata in `teoria/documenti/` se la chiedi |
 
+Agenti, ruoli e workflow arrivano solo con la **città degli agenti**: spuntala nella vetrina di «Crea nuovo progetto», o accendila dopo dalle impostazioni del progetto. Senza, il metodo porta le skill, i file iniziali e la teoria.
+
 ## Come si comincia
 
 1. Chi risponde della documentazione prende il ruolo nel documento delle responsabilità (o dice «È mio» nella città degli agenti).

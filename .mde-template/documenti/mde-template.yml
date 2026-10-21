@@ -1,19 +1,14 @@
-mde_template: 1
+mde_template: 2
 id: documenti
 kind: foundation
 title: Document Driven Development
 description: "Il wiki del progetto, scritto e tenuto in ordine con gli agenti: le fonti restano intatte, le pagine crescono, l'indice e il registro dicono che cosa c'è e che cosa è cambiato."
-version: 1.2.0
+version: 2.0.0
 requires:
-  mde: 2026.10.19.14
+  mde: 2026.10.21.2
 languages:
   it: { structure: main, example: esempio }
   en: { structure: en, example: example }
-roles:
-  - { role: Responsabile della documentazione, description: "approva le pagine del wiki e i controlli, e decide che cosa si corregge", agents: [documenti-redattore, documenti-revisore, documenti-bibliotecario] }
-workflows:
-  - .mde-template/documenti/workflows/fonte.md
-  - .mde-template/documenti/workflows/controllo.md
 instructions: .mde-template/documenti/istruzioni.md
 slides:
   it: .mde-template/documenti/presentazione.md
@@ -25,3 +20,11 @@ seeds:
   - { from: .mde-template/documenti/semi/indice.md, to: wiki/indice.md }
   - { from: .mde-template/documenti/semi/registro.md, to: wiki/registro.md }
   - { from: .mde-template/documenti/semi/revisioni.md, to: revisioni/README.md }
+skills:
+  - .mde-template/documenti/skills/documenti-wiki
+agent_city:
+  roles:
+    - { role: Responsabile della documentazione, description: "approva le pagine del wiki e i controlli, e decide che cosa si corregge", agents: [documenti-redattore, documenti-revisore, documenti-bibliotecario] }
+  workflows:
+    - .mde-template/documenti/workflows/fonte.md
+    - .mde-template/documenti/workflows/controllo.md
