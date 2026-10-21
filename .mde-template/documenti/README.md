@@ -26,6 +26,8 @@ say what is there and what changed.
 | The skill of the wiki conventions | `.claude/skills/documenti-wiki/` |
 | The theory of LLM wikis | `theory/`, copied into `theory/documenti/` if you ask for it |
 
+Agents, roles and workflows arrive only with the **agent city**: tick it in the «Create new project» showcase, or turn it on later from the project settings. Without it, the method brings its skills, starting files and theory.
+
 ## How to start
 
 1. Whoever answers for the documentation takes the role in the responsibilities document (or says «It's mine» in the agent city).
